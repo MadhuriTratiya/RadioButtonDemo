@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    tools:context=".MainActivity">
+    <RadioGroup
+        android:id="@+id/gender"
+        android:layout_width="match_parent"
+        android:layout_height="600dp"
+        tools:ignore="UselessParent">
+
+        <RadioButton
+            android:id="@+id/male"
+            android:layout_width="146dp"
+            android:layout_height="50dp"
+            android:layout_gravity="center"
+            android:layout_marginTop="50dp"
+            android:checked="true"
+            android:text="@string/male"
+            android:textSize="20sp"
+            tools:ignore="UsingOnClickInXml" />
+
+        <RadioButton
+            android:id="@+id/female"
+            android:layout_width="150dp"
+            android:layout_height="50dp"
+            android:layout_gravity="center"
+            android:layout_marginTop="30dp"
+            android:text="@string/female"
+            android:textSize="20sp"
+            tools:ignore="UsingOnClickInXml" />
+    </RadioGroup>
+        <Button
+            android:id="@+id/button"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:onClick="onClick"
+            android:layout_marginTop="300dp"
+            android:text="@string/apply"
+            tools:ignore="UsingOnClickInXml" />
+
+        <TextView
+            android:id="@+id/dmale"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:textSize="30sp"
+            android:layout_marginTop="400dp" />
+
+    </RelativeLayout>
